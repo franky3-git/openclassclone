@@ -1,5 +1,7 @@
+/* general settings for home screen */
 :root {
 	--based-color: #7451EB;
+	--header-background: #003668;
 }
 
 * {
@@ -8,138 +10,153 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.container {
+
+.split-equal-container {
 	display: flex;
-	height: 100vh;
-	color: #444;
 }
-.container > section {
+.right {
 	width: 50%;
 }
-.center {
-	text-align: center;
-}
-.logo {
-	font-size: 1.9rem;
-	text-decoration: none;
-	font-weight: 600;
-	color: var(--based-color);
-	display: inline-block;
-	margin: 30px;
-}
-.left-home {
-	/*position: relative;*/
-}
-.form-container {
-	margin: 50px auto;
-	width: 90%;
-}
-.login-form > * {
-	margin-bottom: 40px;
-}
-.left-home h1 {
-	color: #003668;
-	font-size: 2.6rem;
-	text-align: center;
-	margin-bottom: 25px;
-}
-.login-form {
-	width: 96%;
-}
-.btns-socials-login {
-	text-align: center;
+.left {
+	width: 50%;
 }
 .btn {
-	font-size: 1.4rem;
-	text-decoration: none;
-	padding: 0.3em 1em;
-	border: 1px solid #444;
-	color: inherit;
-	border-radius: 5px;
 	display: inline-block;
-	margin: 0 15px;
-	transition: 200ms background-color;
+	border: solid 2px #444;
+	padding: 0.6em 1em;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 200ms;
+	color: inherit;
 }
-.btn-social:hover {
-	background-color: #ddd;
+
+/* header */
+/* top header */
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--header-background);
+	padding: .6em;
+	color: #eee;
 }
-.separation {
-	text-align: center;
+.btn-more-info {
 	font-size: 1.2rem;
-	font-weight: 700;
+	color: inherit;
+	font-weight: 600;
 }
-.login-form h3 {
-	text-align: center;
+.btn-more-info:hover {
+	background-color:darkcyan;
 }
-.form-group {
-	margin: 0px auto 15px;
-	width: 95%;
-	position: relative;
+
+/* bottom header */
+.bottom-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .8em .6em;
 }
-.group {
-	display: block;
+.left-bottom-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.colored-line {
-	height: 2px;
-	width: 100%;
-	position: absolute;
-	background-color: var(--based-color);
-	bottom: 0;
-	left: 0;
-	transform: scale(0);
-	transition: 300ms transform;
+.logo {
+	font-weight: 600;
+	color: var(--based-color);
+	font-size: 1.9rem;
 }
-.form-group input:not([type="checkbox"]) {
+.btn-show {
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	background-color: none;
+	padding: .8em 1em;
+}
+.btn-show:hover {
+	border-bottom: 2px solid #444;
+}
+.right-bottom-header {
+	display: flex;
+	justify-content: flex-end;
+}
+.right-bottom-header form {
+	margin-right: 20px;
+}
+.right-bottom-header input {
+	height: 100%;
 	border: none;
 	outline: none;
 	border-bottom: 2px solid #444;
-	font-size: 1.3rem;
-	width: 100%;
-	padding: 7px;
 }
-.form-group:hover .colored-line, .form-group:focus .colored-line {
-	transform: scale(1);
-}
-.form-group-info {
-	font-size: .9em;
-	margin-top: 10px;
-	display: inline-block
-}
-.birth-txt {
-	display: block;
-}
-select {
-	padding: 6px;
-}
-.btn-submit-container {
-	text-align: center;
-}
-[type="submit"] {
-	background-color: #7451EB;
-	color: #eee;
-	cursor: pointer;
-	transition: 100ms all;
-}
-[type="submit"]:hover {
-	box-shadow: 0 6px 5px rgba(0,0,0,.5)
-}
-.go-signup-form a{
+.btn-login {
+	font-weight: 600;
 	color: var(--based-color);
-	transition: 200ms all;
 }
-.go-signup-form a:hover {
-	text-decoration: none;
+.btn-login:hover {
+	background-color: #ddd;
 }
-.right-home {
-	background: #000;
-	color: #eee;
+
+/* home banner */
+.home-banner {
+	background-color: var(--based-color);
+	height: 40vh;
 }
-.person-message{
-	font-size: 1.3rem;
-	width: 80%;
-	margin: 30px auto;
-}
-.person-name {
-	width: 80%;
-	margin: 10px auto;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

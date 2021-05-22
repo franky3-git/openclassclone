@@ -7,76 +7,120 @@
 	<link rel="stylesheet" href="test.css" type="text/css">
 </head>
 <body>
-	<div class="container">
-		<section class="left-home">
-			<header>
-				<a href="#" class="logo">openclassrooms</a>
-			</header>
-			<main class="form-container">
-				<form action="/home" class="login-form" method="post">
-					<h1>inscription</h1>
-					<div class="btns-socials-login">
-						<a href="#" class="btn-social btn">facebook</a>
-						<a href="#" class="btn-social btn">google</a>
-						<a href="#" class="btn-social btn">apple</a>
-					</div>
-					<p class="separation">OU</p>
-					<h3>inscrivez-vous avec votre adresse email</h3>
-					
-					<p class="form-group">
-						<input type="text" name="first-name" id="first-name" placeholder="Prenom">
-						<span class="colored-line"></span>
-					</p>
-					<p class="form-group">
-						<input type="text" name="last-name" id="last-name" placeholder="Nom">
-						<span class="colored-line"></span>
-					</p>
-					<p class="form-group">
-						<input type="email" name="mail" id="mail" placeholder="Adresse e-mail">
-						<span class="colored-line"></span>
-						
-					</p>
-					<span class="form-group-info">Vous recevrez votre mot de passe sur cette adresse e-mail</span>
-					<p class="form-group">
-						<span class="group">
-							<span class="birth-txt">Date de naissance</span>
-							<select name="day" id="day">
-								<option value="default" selected>jours</option>
-							</select>
-							<select name="month" id="month">
-								<option value="default" selected>mois</option>
-							</select>
-							<select name="year" id="year">
-								<option value="default" selected>année</option>
-							</select>
-						</span>
-						<span class="form-group-info">Vous devez avoir au moins 15 ans pour accéder à OpenClassrooms</span>
-					</p>
-					<p class="form-group">
-						<input type="checkbox" name="accept-policy" id="accept-policy">
-						<label for="accept-policy">J'ai lu et j'accepte les Conditions Générales d'Utilisation et la Politique de Protection des Données Personnelles.</label>
-					</p>
-					<p class="form-group">
-						<input type="checkbox" name="info-course" id="info-course">
-						<label for="info-course">J'aimerais être tenu au courant des nouveaux cours et parcours d'OpenClassooms.</label>
-					</p>
-					<p class="btn-submit-container">
-						<input type="submit" value="s'inscrire" class="btn">
-					</p>
+	
+	<header>
+		<div class="top-header">
+			<p>Demandeur d'emploi en île-de-France? Profitez de places de formation gratuites</p>
+			<a href="/" class="btn-more-info btn">en savoir plus</a>
+		</div>
+		<div class="bottom-header">
+			<div class="left-bottom-header left">
+				<div class="logo">openclassrooms</div>
+				<button class="btn-show-trainings btn-show">formations</button>
+				<button class="btn-show-enterprise btn-show">pour les entreprises</button>
+			</div>
+			<div class="right-bottom-header right">
+				<form action="">
+					<input type="text" name="search-course" id="search-course">
 				</form>
-				<p class="center">Vous avez déja un compte? <span class="go-signup-form"><a href="/" >Connectez vous</a></span></p>
-			</main>
-		</section>
-		<section class="right-home">
-			<h2 class="person-message">« J'ai validé ma formation UX Designer en étant maman et entrepreneuse. C'était sport...
-			mais je l'ai fait ! »</h2>
-			<p class="person-name">Mathilde - Diplômée OpenClassrooms</p>
-				
-		</section>
+				<a href="/login" class="btn-login btn">se connecter</a>
+			</div>
+		</div>
+	</header>
+	<div class="home-banner split-equal-container">
+		<div class="left"></div>
+		<div class="right">
+			<h1>Votre avenir <br />commence ici</h1>
+			<p>Apprenez à apprendre. <br> Découvrez les compétences de demain. <br> Et prenez votre carrière en main.</p>
+			<a href="#">en savoir plus</a>
+		</div>
 	</div>
 	
+	<div class="home-some-info-container">
+		<div class="some-info"></div>
+		<div class="some-info"></div>
+		<div class="some-info"></div>
+	</div>
+	<div class="splitting-section">
+		<h3>une formation gratuite mais payante</h3>
+		<h2>en île de france et en recherche d'emploi <br> beneficiez de places de formation gratuites</h2>
+	</div>
 	
+	<section class='split-equal-container'>
+		<article class="left">
+			<h2>des formations innovantes</h2>
+			<p>Devenez qui vous voulez être avec OpenClassrooms. Choisissez votre carrière. Suivez une formation constituée de projets professionnalisants et de séances individuelles avec un mentor dédié chaque semaine. Obtenez un diplôme reconnu par l'état. Enrichissez votre CV avec les programmes en alternance proposés par OpenClassrooms et gagnez un salaire tout en suivant votre formation.</p>
+		</article>
+		<article class="right">
+			<p>ajouter ma video ici</p>
+		</article>
+	</section>
+	<section>
+		<h2>nos etudiants témoignent</h2>
+		<section class="split-equal-container">
+			<article class="left">
+				<p>mettre mon image</p>
+			</article>
+			<article class="right">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit sit iste pariatur voluptatibus optio, repellat obcaecati nostrum? Quo libero numquam officia tempore eveniet alias impedit cum est facere culpa. Fuga nisi, molestias suscipit officia, voluptatibus esse illum mollitia! Non at numquam, minus omnis optio officia magni, culpa in fugit vel molestias quae similique, debitis saepe. Praesentium, voluptate.</p>
+			</article>
+		</section>
+	</section>
 	
+	<section class="contact">
+		<h2>nous sommes là pour vous aider</h2>
+		<a href="#">nous contacter</a>
+	</section>
+	
+	<footer class="split-equal-container">
+		<article>
+			<p class="title">openclassrooms</p>
+			<ul>
+				<li><a href="#">l'entreprise</a></li>
+				<li><a href="#">Alternance</a></li>
+				<li><a href="#">Financements</a></li>
+				<li><a href="#">L'expérience de formation</a></li>
+				<li><a href="#">Forum</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</article>
+		<article>
+			<p class="title">entreprises</p>
+			<ul>
+				<li><a href="#">employeurs</a></li>
+				<li><a href="#">contact</a></li>
+				<li><a href="#">font awesome</a></li>
+				
+			</ul>
+		</article>
+		<article>
+			<p class="title">en plus</p>
+			<ul>
+				<li><a href="#">Nous rejoindre</a></li>
+				<li><a href="#">devenez mentor</a></li>
+				<li><a href="#">boutique</a></li>
+				<li><a href="#">conditions générales d'utilisation</a></li>
+				<li><a href="#">Politique de Protection des données personnelles</a></li>
+				<li><a href="#">Accessibilité</a></li>
+			</ul>
+		</article>
+		<article>
+			<p class="language-input-container">
+				<input type="text">
+			</p>
+			<ul class="socials">
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">link in</a></li>
+				<li><a href="#">instagram</a></li>
+				<li><a href="#">youtube</a></li>
+			</ul>
+			<div class="btn-app-store">
+				<p>Télécharger dans</p>
+				<p>l'app store</p>
+			</div>
+		</article>
+	</footer>
 	<script src="test.js"></script>
 </body>
 </html>
