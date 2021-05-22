@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inscription</title>
+	
+	<link rel="stylesheet" href="test.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<section class="left-home">
+			<header>
+				<a href="#" class="logo">openclassrooms</a>
+			</header>
+			<main class="form-container">
+				<form action="/home" class="login-form" method="post">
+					<h1>inscription</h1>
+					<div class="btns-socials-login">
+						<a href="#" class="btn-social btn">facebook</a>
+						<a href="#" class="btn-social btn">google</a>
+						<a href="#" class="btn-social btn">apple</a>
+					</div>
+					<p class="separation">OU</p>
+					<h3>inscrivez-vous avec votre adresse email</h3>
+					
+					<p class="form-group">
+						<input type="text" name="first-name" id="first-name" placeholder="Prenom">
+						<span class="colored-line"></span>
+					</p>
+					<p class="form-group">
+						<input type="text" name="last-name" id="last-name" placeholder="Nom">
+						<span class="colored-line"></span>
+					</p>
+					<p class="form-group">
+						<input type="email" name="mail" id="mail" placeholder="Adresse e-mail">
+						<span class="colored-line"></span>
+						
+					</p>
+					<span class="form-group-info">Vous recevrez votre mot de passe sur cette adresse e-mail</span>
+					<p class="form-group">
+						<span class="group">
+							<span class="birth-txt">Date de naissance</span>
+							<select name="day" id="day">
+								<option value="default" selected>jours</option>
+							</select>
+							<select name="month" id="month">
+								<option value="default" selected>mois</option>
+							</select>
+							<select name="year" id="year">
+								<option value="default" selected>année</option>
+							</select>
+						</span>
+						<span class="form-group-info">Vous devez avoir au moins 15 ans pour accéder à OpenClassrooms</span>
+					</p>
+					<p class="form-group">
+						<input type="checkbox" name="accept-policy" id="accept-policy">
+						<label for="accept-policy">J'ai lu et j'accepte les Conditions Générales d'Utilisation et la Politique de Protection des Données Personnelles.</label>
+					</p>
+					<p class="form-group">
+						<input type="checkbox" name="info-course" id="info-course">
+						<label for="info-course">J'aimerais être tenu au courant des nouveaux cours et parcours d'OpenClassooms.</label>
+					</p>
+					<p class="btn-submit-container">
+						<input type="submit" value="s'inscrire" class="btn">
+					</p>
+				</form>
+				<p class="center">Vous avez déja un compte? <span class="go-signup-form"><a href="/" >Connectez vous</a></span></p>
+			</main>
+		</section>
+		<section class="right-home">
+			<h2 class="person-message">« J'ai validé ma formation UX Designer en étant maman et entrepreneuse. C'était sport...
+			mais je l'ai fait ! »</h2>
+			<p class="person-name">Mathilde - Diplômée OpenClassrooms</p>
+				
+		</section>
+	</div>
+	
+	
+	
+	<script src="test.js"></script>
+</body>
+</html>
